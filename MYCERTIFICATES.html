@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CERTIFICATES</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="D:\Bhanu\personal portfolio\personal portfolio\css\style.css">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="home.html"> <i class="fas fa-home"></i> <span>home</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>about</span> </a>
+    <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>portfolio</span> </a>
+    <a href="MYCERTIFICATES.html"> <i class="fas fa-blog"></i> <span>MY CERTIFICATES</span> </a>
+    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>contact</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="MYWORKSHOPCERTIFICTES">
+
+    <h1 class="heading"> <span>MY</span> CERTIFICATES </h1>
+    <div class="container">
+        <div class="box-container">
+            <div class="box">
+                <img src="D:\Bhanu\personal portfolio\personal portfolio\images\ima-1.png" alt="">
+            </div>
+            <div class="box">
+                <img width="1000"src="D:\Bhanu\personal portfolio\personal portfolio\images\ima-2.png" alt="">
+            </div>
+            <div class="box">
+                <img src="D:\Bhanu\personal portfolio\personal portfolio\images\ima-3.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        document.querySelectorAll('.box-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-box').style.display = 'block';
+                document.querySelector('.popup-box img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-box span').onclick = () =>{
+            document.querySelector('.popup-box').style.display = 'none';
+        }
+    </script>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+</body>
+</html>
